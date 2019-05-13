@@ -8,7 +8,7 @@ public class Main {
     static String computerChoice;
     static int playerChoice;
     static String choice;
-    Scanner keyboard = new Scanner(System.in);
+    static Scanner keyboard = new Scanner(System.in);
     static boolean running=true;
 
 
@@ -28,6 +28,12 @@ public class Main {
             System.out.println("Type 1 for Rock");
             System.out.println("Type 2 for Paper");
             System.out.println("Type 3 for Scissors");
+            playerChoice = keyboard.nextInt();
+            computerChoice = computerOptions[rand.nextInt(3)];
+            Player();
+            System.out.println("You chose "+ choice);
+            System.out.println("Computer chose "+ computerChoice);
+
         }
     }
 }
