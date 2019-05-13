@@ -1,5 +1,6 @@
 package org.lickingheights;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -10,6 +11,7 @@ public class Main {
     static String choice;
     static Scanner keyboard = new Scanner(System.in);
     static boolean running=true;
+    static Random rand = new Random();
 
 
 
