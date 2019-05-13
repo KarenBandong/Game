@@ -38,4 +38,16 @@ public class Main {
 
         }
     }
+
+    public static String weapon(){
+        if(playerChoice == 1){
+            choice = "Rock";
+        }else if(playerChoice == 2){
+            choice = "Paper";
+        }else if(playerChoice == 3){
+            choice = "Scissors";
+        }
+
+        return choice;
+    }
 }
