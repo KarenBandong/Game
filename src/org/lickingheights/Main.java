@@ -9,6 +9,7 @@ public class Main {
     static int playerChoice;
     static String choice;
     Scanner keyboard = new Scanner(System.in);
+    static boolean running=true;
 
 
 
@@ -21,6 +22,12 @@ public class Main {
 
 
     public static void main(String[] args) {
-
+        start();
+        System.out.println("lets play rock, paper, scissors!");
+        while(running) {
+            System.out.println("Type 1 for Rock");
+            System.out.println("Type 2 for Paper");
+            System.out.println("Type 3 for Scissors");
+        }
     }
 }
