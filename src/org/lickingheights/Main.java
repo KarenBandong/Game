@@ -9,6 +9,14 @@ public class Main {
 
 
 
+    public static void start() {
+
+        computerOptions[0] = "Rock";
+        computerOptions[1] = "Paper";
+        computerOptions[2] = "Scissors";
+    }
+
+
     public static void main(String[] args) {
 
     }
