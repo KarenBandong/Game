@@ -37,6 +37,8 @@ public class Main {
             System.out.println("You chose "+ choice);
             System.out.println("Computer chose "+ computerChoice);
             score();
+            System.out.println("Your score is "+playerScore);
+            System.out.println("The computer's score is "+computerScore+"\n\n\n");
 
         }
     }
@@ -58,28 +60,35 @@ public class Main {
         }
         else if (playerChoice==1 && computerChoice.equalsIgnoreCase("Paper")){
             System.out.println("You lose!");
+            computerScore++;
         }
         else if (playerChoice==1 && computerChoice.equalsIgnoreCase("Scissors")){
             System.out.println("You win!");
+            playerScore++;
         }
         else if (playerChoice==2 && computerChoice.equalsIgnoreCase("Paper")) {
             System.out.println("It's a tie!!");
         }
         else if (playerChoice==2 && computerChoice.equalsIgnoreCase("Rock")) {
             System.out.println("You win!");
+            playerScore++;
         }
         else if (playerChoice==2 && computerChoice.equalsIgnoreCase("Scissors")) {
             System.out.println("You lose!");
+            computerScore++;
         }
         else if (playerChoice==3 && computerChoice.equalsIgnoreCase("Rock")) {
             System.out.println("You lose!");
+            computerScore++;
         }
         else if (playerChoice==3 && computerChoice.equalsIgnoreCase("Paper")) {
             System.out.println("You win!");
+            playerScore++;
         }
         else if (playerChoice==3 && computerChoice.equalsIgnoreCase("Scissors")) {
             System.out.println("It's a tie!");
         }
     }
+
 
 }
