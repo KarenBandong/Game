@@ -32,7 +32,7 @@ public class Main {
             System.out.println("Type 3 for Scissors");
             playerChoice = keyboard.nextInt();
             computerChoice = computerOptions[rand.nextInt(3)];
-            Player();
+            weapon();
             System.out.println("You chose "+ choice);
             System.out.println("Computer chose "+ computerChoice);
 
@@ -49,5 +49,34 @@ public class Main {
         }
 
         return choice;
+    }
+    public static void score(){
+        if (playerChoice==1 && computerChoice.equalsIgnoreCase("Rock")){
+            System.out.println("It is a tie!");
+        }
+        else if (playerChoice==1 && computerChoice.equalsIgnoreCase("Paper")){
+            System.out.println("You lose!");
+        }
+        else if (playerChoice==1 && computerChoice.equalsIgnoreCase("Scissors")){
+            System.out.println("You win!");
+        }
+        else if (playerChoice==2 && computerChoice.equalsIgnoreCase("Paper")) {
+            System.out.println("It's a tie!!");
+        }
+        else if (playerChoice==2 && computerChoice.equalsIgnoreCase("Rock")) {
+            System.out.println("You win!");
+        }
+        else if (playerChoice==2 && computerChoice.equalsIgnoreCase("Scissors")) {
+            System.out.println("You lose!");
+        }
+        else if (playerChoice==3 && computerChoice.equalsIgnoreCase("Rock")) {
+            System.out.println("You lose!");
+        }
+        else if (playerChoice==3 && computerChoice.equalsIgnoreCase("Paper")) {
+            System.out.println("You win!");
+        }
+        else if (playerChoice==3 && computerChoice.equalsIgnoreCase("Scissors")) {
+            System.out.println("It's a tie!");
+        }
     }
 }
