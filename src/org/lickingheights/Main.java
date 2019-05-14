@@ -12,6 +12,7 @@ public class Main {
     static Scanner keyboard = new Scanner(System.in);
     static boolean running=true;
     static Random rand = new Random();
+  static int computerScore=0, playerScore=0;
 
 
 
@@ -80,4 +81,5 @@ public class Main {
             System.out.println("It's a tie!");
         }
     }
+
 }
