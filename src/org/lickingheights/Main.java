@@ -25,7 +25,7 @@ public class Main {
 
     public static void main(String[] args) {
         start();
-        System.out.println("lets play rock, paper, scissors!");
+        System.out.println("Lets play Rock, Paper, and Scissors!");
         while(running) {
             System.out.println("Type 1 for Rock");
             System.out.println("Type 2 for Paper");
@@ -35,6 +35,7 @@ public class Main {
             weapon();
             System.out.println("You chose "+ choice);
             System.out.println("Computer chose "+ computerChoice);
+            score();
 
         }
     }
