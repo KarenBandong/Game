@@ -10,9 +10,9 @@ public class Main {
     static int playerChoice;
     static String choice;
     static Scanner keyboard = new Scanner(System.in);
-    static boolean running=true;
+    static boolean running;
     static Random rand = new Random();
-  static int computerScore=0, playerScore=0;
+  static int computerScore, playerScore;
   static String rerun;
 
 
@@ -22,6 +22,9 @@ public class Main {
         computerOptions[0] = "Rock";
         computerOptions[1] = "Paper";
         computerOptions[2] = "Scissors";
+        computerScore=0;
+        playerScore=0;
+        running=true;
     }
 
 
@@ -37,6 +40,7 @@ public class Main {
             playerChoice = keyboard.nextInt();
             if (playerChoice==4){
                 start();
+
             }
             else if (playerChoice==5){
                 running=false;
@@ -48,7 +52,7 @@ public class Main {
             System.out.println("Computer chose "+ computerChoice);
             score();
             System.out.println("Your score is "+playerScore);
-            System.out.println("The computer's score is "+computerScore);
+            System.out.println("The computer's score is "+computerScore+"\n\n\n");
 
 
         }
