@@ -13,6 +13,7 @@ public class Main {
     static boolean running=true;
     static Random rand = new Random();
   static int computerScore=0, playerScore=0;
+  static String rerun;
 
 
 
@@ -38,7 +39,9 @@ public class Main {
             System.out.println("Computer chose "+ computerChoice);
             score();
             System.out.println("Your score is "+playerScore);
-            System.out.println("The computer's score is "+computerScore+"\n\n\n");
+            System.out.println("The computer's score is "+computerScore);
+            System.out.println("Type R to restart the game.");
+            System.out.println("Type S to stop the game.");
 
         }
     }
@@ -89,6 +92,5 @@ public class Main {
             System.out.println("It's a tie!");
         }
     }
-
 
 }
