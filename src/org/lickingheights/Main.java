@@ -32,7 +32,16 @@ public class Main {
             System.out.println("Type 1 for Rock");
             System.out.println("Type 2 for Paper");
             System.out.println("Type 3 for Scissors");
+            System.out.println("Type 4 to restart the game.");
+            System.out.println("Type 5 to stop the game.");
             playerChoice = keyboard.nextInt();
+            if (playerChoice==4){
+                start();
+            }
+            else if (playerChoice==5){
+                running=false;
+                break;
+            }
             computerChoice = computerOptions[rand.nextInt(3)];
             weapon();
             System.out.println("You chose "+ choice);
@@ -40,8 +49,7 @@ public class Main {
             score();
             System.out.println("Your score is "+playerScore);
             System.out.println("The computer's score is "+computerScore);
-            System.out.println("Type R to restart the game.");
-            System.out.println("Type S to stop the game.");
+
 
         }
     }
